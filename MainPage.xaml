@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tamagotchi.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Label
+                Text=""
+                x:Name="TimerText"
+                FontSize="32"
+                Margin="0, 0, 0 , -100"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text=""
+                x:Name="test_label"
+                FontSize="32"
+                Margin="0, 0, 0 , -100"
+                HorizontalOptions="Center" />
+
+            <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+                <Image
+                Source="neutral_background.png"
+                x:Name="neutral_background"
+                SemanticProperties.Description="Chimchar"
+                HeightRequest="500"
+                Margin="0, 100, 0, -400"
+                HorizontalOptions="Center" />
+
+                <ImageButton 
+                Source="egg.png"
+                x:Name="tamagotchi_image"
+                Clicked="OnCounterClicked"
+                IsEnabled="True"
+                    Margin="0 , 0 ,0, 200"
+                SemanticProperties.Description="Tamagotchi"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+
+            </VerticalStackLayout>
+
+            <Grid
+                HorizontalOptions="Center"
+            >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+
+                <HorizontalStackLayout
+                    HorizontalOptions="Center"
+                    x:Name="give_buttons"
+                    IsVisible ="False"
+                    >
+                <Button
+                    x:Name="hunger_button"
+                    Text="Give Food"
+                    Clicked="GiveFood"
+                    WidthRequest="200"
+                    Margin="5, 0"
+                    />
+
+                <Button
+                    x:Name="happy_button"
+                    Text="Give Love"
+                    Clicked="GiveLove"
+                    Grid.Column="1"
+                    WidthRequest="200"
+                    Margin="5, 0"
+
+                    />
+                </HorizontalStackLayout>
+            </Grid>
+
+            <Label
+                Text="Tamagotchi"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                HorizontalOptions="Center" />
+
+            <VerticalStackLayout
+                x:Name="pet_stats"
+                Spacing="25"
+            Padding="30,0"
+                IsVisible="false"
+                >
+
+                <Label
+                Text="Health"
+                Margin="20, 0, 0 , -20"
+                FontSize="20"
+                HorizontalOptions="Center" />
+
+                <ProgressBar
+                x:Name="health_bar"
+                         ProgressColor="Red"
+                    Progress="1"
+                
+                />
+
+
+
+                <Label
+                Text="Hunger"
+                Margin="20, 0, 0 , -20"
+                FontSize="20"
+                HorizontalOptions="Center" />
+                <ProgressBar
+                x:Name="hunger_bar"
+                         ProgressColor="Green"
+                Progress="1"
+                />
+
+                <Label
+                Text="Happy"
+                Margin="20, 0, 0 , -20"
+                FontSize="20"
+                HorizontalOptions="Center" />
+                <ProgressBar
+                x:Name="happy_bar"
+                         ProgressColor="Yellow"
+                Progress="1"
+                    Margin="0, 0, 0, 50"
+                />
+            </VerticalStackLayout>
+
+            <Button
+                x:Name="resetbtn"
+                Text="Click me to reset count"
+                IsVisible="false"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="resetcount"
+                HorizontalOptions="Center" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
