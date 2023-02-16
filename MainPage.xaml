@@ -16,12 +16,6 @@
                 Margin="0, 0, 0 , -100"
                 HorizontalOptions="Center" />
 
-            <Label
-                Text=""
-                x:Name="test_label"
-                FontSize="32"
-                Margin="0, 0, 0 , -100"
-                HorizontalOptions="Center" />
 
             <VerticalStackLayout
             Spacing="25"

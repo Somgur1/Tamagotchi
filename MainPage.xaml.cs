@@ -35,7 +35,7 @@ public partial class MainPage : ContentPage
             
             TimerText.Text = timertext.ToString();
 
-			health_bar.Progress = health_bar.Progress - 0.1; //for testing
+			//health_bar.Progress = health_bar.Progress - 0.1; //for testing
 
 			if(happy_bar.Progress == 0)
 			{
@@ -56,9 +56,6 @@ public partial class MainPage : ContentPage
 			{
 				if (!imageChangeOnce)
 				{
-
-
-
 					if (is_shiny)
 					{
 						tamagotchi_image.Source = "shiny_chimchar_sad.png";
