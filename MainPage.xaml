@@ -77,6 +77,7 @@
 
             <Label
                 Text="Tamagotchi"
+                x:Name="tam_name"
                 SemanticProperties.HeadingLevel="Level1"
                 FontSize="32"
                 HorizontalOptions="Center" />
@@ -107,7 +108,8 @@
                 Text="Hunger"
                 Margin="20, 0, 0 , -20"
                 FontSize="20"
-                HorizontalOptions="Center" />
+                HorizontalOptions="Center" 
+                    x:Name="hunger_label"/>
                 <ProgressBar
                 x:Name="hunger_bar"
                          ProgressColor="Green"
