@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Chimchar",
+    "image": "chimchar.png",
+    "health": 1.0,
+    "hunger": 0.8,
+    "happy": 0.8,
+    "is_shiny": false,
+    "time_alive": 14,
+    "Name": "TestName"
+  },
+  {
+    "name": "Chimchar2",
+    "image": "chimchar.png",
+    "health": 1.0,
+    "hunger": 0.8,
+    "happy": 0.8,
+    "is_shiny": false,
+    "time_alive": 14,
+    "Name": "TestName"
+  }
+]

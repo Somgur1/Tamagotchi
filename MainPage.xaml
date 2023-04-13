@@ -91,6 +91,7 @@
 
                 <Label
                 Text="Health"
+                    x:Name="health_label"
                 Margin="20, 0, 0 , -20"
                 FontSize="20"
                 HorizontalOptions="Center" />
@@ -118,6 +119,7 @@
 
                 <Label
                 Text="Happy"
+                    x:Name="happy_label"
                 Margin="20, 0, 0 , -20"
                 FontSize="20"
                 HorizontalOptions="Center" />
@@ -126,7 +128,9 @@
                          ProgressColor="Yellow"
                 Progress="1"
                     Margin="0, 0, 0, 50"
-                />
+                   
+                    />
+                
             </VerticalStackLayout>
 
             <Button
@@ -135,6 +139,13 @@
                 IsVisible="false"
                 SemanticProperties.Hint="Counts the number of times you click"
                 Clicked="resetcount"
+                HorizontalOptions="Center" />
+
+            <Button
+                x:Name="homebtn"
+                Text="Home menu"
+                IsVisible="true"
+                Clicked="Button_Clicked"
                 HorizontalOptions="Center" />
 
         </VerticalStackLayout>

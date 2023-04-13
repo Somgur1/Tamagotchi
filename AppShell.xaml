@@ -7,8 +7,15 @@
     Shell.FlyoutBehavior="Disabled">
 
     <ShellContent
+        
         Title="Home"
+        ContentTemplate="{DataTemplate local:MainMenu}"
+        Route="MainMenu" />
+
+    <ShellContent
+        Title="Tamagochi"
         ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+        Route="MainPage"
+        />
 
 </Shell>
